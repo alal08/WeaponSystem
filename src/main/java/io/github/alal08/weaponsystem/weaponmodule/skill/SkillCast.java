@@ -1,6 +1,5 @@
 package io.github.alal08.weaponsystem.weaponmodule.skill;
 
-import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;

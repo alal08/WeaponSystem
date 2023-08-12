@@ -1,6 +1,5 @@
 package io.github.alal08.weaponsystem;
 
-import io.github.alal08.weaponsystem.weaponmodule.Weapon;
 import io.github.alal08.weaponsystem.weaponmodule.command.WeaponCommand;
 import io.github.alal08.weaponsystem.weaponmodule.skill.SkillCast;
 import org.bukkit.plugin.PluginManager;
