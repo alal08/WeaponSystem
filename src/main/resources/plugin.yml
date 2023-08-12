@@ -1,0 +1,6 @@
+name: WeaponSystem
+version: '${version}'
+main: io.github.alal08.weaponsystem.WeaponSystem
+api-version: 1.20
+commands:
+  weapon:
