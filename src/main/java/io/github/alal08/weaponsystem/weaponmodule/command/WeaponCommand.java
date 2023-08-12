@@ -1,6 +1,7 @@
 package io.github.alal08.weaponsystem.weaponmodule.command;
 
 import io.github.alal08.weaponsystem.weaponmodule.weapon.WeaponStone;
+import net.kyori.adventure.text.Component;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -17,7 +18,7 @@ public class WeaponCommand implements CommandExecutor {
             return true;
         }
         else if(sender instanceof ConsoleCommandSender) {
-            sender.sendMessage("콘솔에서는 이 명령어를 실행할 수 없습니다.");
+            sender.sendMessage(Component.text("콘솔에서는 이 명령어를 실행할 수 없습니다."));
             return false;
         }
         return false;
