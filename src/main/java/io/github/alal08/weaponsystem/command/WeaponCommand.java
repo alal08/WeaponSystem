@@ -1,6 +1,7 @@
-package io.github.alal08.weaponsystem.weaponmodule.command;
+package io.github.alal08.weaponsystem.command;
 
-import io.github.alal08.weaponsystem.weaponmodule.weapon.WeaponStone;
+import io.github.alal08.weaponsystem.WeaponSystem;
+import io.github.alal08.weaponsystem.Weapons;
 import net.kyori.adventure.text.Component;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -14,7 +15,7 @@ public class WeaponCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if(sender instanceof Player player) {
-            player.getInventory().addItem(new WeaponStone().getWand());
+            WeaponSystem.getPlayer(player).addWeapon(Weapons.getWeaponStone());
             return true;
         }
         else if(sender instanceof ConsoleCommandSender) {
